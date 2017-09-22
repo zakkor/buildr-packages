@@ -2,7 +2,7 @@ name: polybar
 description: Cool bar
 screenshot: https://url-to-screenshot.jpg
 source:
-  uri: https://github.com/jaagr/polybar.git
+  uri: https://github.com/jaagr/polybar
   ref: 3.0.4
 
 build:

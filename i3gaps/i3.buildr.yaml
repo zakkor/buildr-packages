@@ -1,5 +1,5 @@
 name: i3-wm
-description: Cool window manager
+description: i3 is a tiling window manager
 screenshot: https://url-to-screenshot.jpg
 source:
   uri: https://github.com/Airblader/i3

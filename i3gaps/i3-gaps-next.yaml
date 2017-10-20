@@ -1,9 +1,9 @@
-name: i3-wm-change-name
+name: i3-wm-gaps-next
 description: i3 is a tiling window manager.
 screenshot: https://url-to-screenshot.jpg
 source:
   uri: https://github.com/Airblader/i3
-  ref: gaps
+  ref: gaps-next
 
 build:
   deps:

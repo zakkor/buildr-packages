@@ -27,7 +27,7 @@ build:
     - libxkbcommon-dev
     - libxkbcommon-x11-dev
   cmds:
-    - git submodule update --init
+    - cd $BUILDR_SRC_DIR && git submodule update --init
     - autoreconf --force --install $BUILDR_SRC_DIR
     - $BUILDR_SRC_DIR/configure --prefix=/usr
     - make

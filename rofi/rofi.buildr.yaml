@@ -34,7 +34,7 @@ build:
 
 package:
   type: pack-deb
-  version_cmd: grep -m 1 version FILE | cut -d' -f2
+  version_cmd: grep -m 1 version meson.build | cut -d\' -f2
   deps:
     - libc6 (>= 2.14)
     - libcairo2 (>= 1.6.4-5~)

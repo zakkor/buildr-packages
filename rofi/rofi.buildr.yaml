@@ -27,6 +27,7 @@ build:
     - libxkbcommon-dev
     - libxkbcommon-x11-dev
     - libxcb-ewmh-dev
+    - librsvg2-dev
   cmds:
     - add-apt-repository ppa:aguignard/ppa
     - apt-get update
@@ -41,6 +42,7 @@ package:
   type: pack-deb
   version_cmd: grep -m 1 version meson.build | cut -d\' -f2
   deps:
+    - librsvg2-2 (>= 2.40.13-3)
     - libc6 (>= 2.14)
     - libcairo2 (>= 1.6.4-5~)
     - libev4 (>= 1:4.04)

@@ -26,7 +26,11 @@ build:
     - libxcb-xkb-dev
     - libxkbcommon-dev
     - libxkbcommon-x11-dev
+    - libxcb-ewmh-dev
   cmds:
+    - add-apt-repository ppa:aguignard/ppa
+    - apt-get update
+    - apt-get install -y libxcb-xrm-dev
     - cd $BUILDR_SRC_DIR && git submodule update --init
     - autoreconf --force --install $BUILDR_SRC_DIR
     - $BUILDR_SRC_DIR/configure --prefix=/usr

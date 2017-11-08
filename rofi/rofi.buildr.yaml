@@ -1,6 +1,9 @@
 name: rofi
 description: A window switcher, application launcher and dmenu replacement
 screenshot: https://url-to-screenshot.jpg
+distros:
+  - 16.04
+  - 16.10
 source:
   uri: https://github.com/DaveDavenport/rofi
   ref: next

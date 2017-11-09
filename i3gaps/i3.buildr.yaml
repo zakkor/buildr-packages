@@ -4,6 +4,11 @@ screenshot: https://url-to-screenshot.jpg
 source:
   uri: https://github.com/Airblader/i3
   ref: gaps
+distros:
+  - ubuntu:xenial
+  - ubuntu:trusty
+  - ubuntu:artful
+  - debian:jessie
 
 build:
   deps:

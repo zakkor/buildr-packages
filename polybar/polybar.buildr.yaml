@@ -4,6 +4,9 @@ screenshot: https://url-to-screenshot.jpg
 source:
   uri: https://github.com/jaagr/polybar
   ref: 3.0.4
+  
+distros:
+  - ubuntu:17.10
 
 build:
   deps:
@@ -12,7 +15,6 @@ build:
       - i3-wm
       - libmpdclient-dev
       - libiw-dev
-
       - libcairo2-dev
       - libxcb-composite0-dev
       - libxcb-damage0-dev
@@ -34,7 +36,7 @@ build:
 
 package:
   type: pack-deb
-  version_cmd: cat I3_VERSION | sed 's/-non-git//'
+  version_cmd: echo "latest"
   deps:
     - libc6 (>= 2.14)
     - libcairo2 (>= 1.6.4-5~)
